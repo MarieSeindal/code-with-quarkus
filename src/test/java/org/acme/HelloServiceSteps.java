@@ -8,8 +8,10 @@ import io.cucumber.java.en.When;
 
 public class HelloServiceSteps {
 
+
     String result;
-    String test;
+    String name;
+    String street;
     HelloService service = new HelloService();
     PersonService personservice = new PersonService();
 
@@ -27,6 +29,18 @@ public class HelloServiceSteps {
         result = personservice.hello();
     }
 
+
+    @Then("I get the name {string}")
+    public void i_get_the_name(String string) {
+        name = personservice.p1.name;
+        assertEquals(string,name);
+    }
+
+    @Then("the street {string}")
+    public void the_street(String string) {
+        street = personservice.p1.street;
+        assertEquals(string, street);
+    }
 
 
 }

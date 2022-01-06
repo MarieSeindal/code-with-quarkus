@@ -10,15 +10,12 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/hello")
 public class HelloService {
-//    JSONObject jsonPerson = new JSONObject();
-//
+    String string = "Hello";
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-//        jsonPerson.put("name", "Klaus");
-//        jsonPerson.put("streetname", "Frimestervej");
-
-        return "Hello Hi";
+       return string;
     }
 }
 

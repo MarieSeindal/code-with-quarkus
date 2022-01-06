@@ -1,3 +1,5 @@
+package org.acme;
+
 public class Person {
     public String name;
     public String street;
@@ -6,8 +8,6 @@ public class Person {
         this.name = name;
         this.street = street;
     }
-
-
 
 
 }

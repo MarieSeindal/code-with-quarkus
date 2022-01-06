@@ -11,6 +11,6 @@ public class HelloService {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello RESTEasy";
+        return "Hello PPP RESTEasy";
     }
 }

@@ -1,8 +1,8 @@
 package org.acme;
 
 public class Person {
-    String address;
-    String name;
+    private String address;
+    private String name;
 
     public Person(String address, String name){
         this.address=address;

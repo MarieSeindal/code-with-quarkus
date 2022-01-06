@@ -6,4 +6,5 @@ Feature: HelloService
 
   Scenario: Person
     When I call the person service
-    Then I get the answer "H"
+    Then I get the name "Alice"
+    And the street "RockyRoad"

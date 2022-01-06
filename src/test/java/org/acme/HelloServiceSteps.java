@@ -29,12 +29,12 @@ public class HelloServiceSteps {
 
     @Then("I get the name {string}")
     public void i_get_the_name(String string) {
-        assertEquals(result, string);
+        assertEquals(personservice.p.getName(), string);
     }
-    @Then("the street {string}")
-    public void the_street(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+    @Then("the address {string}")
+    public void the_address(String string) {
+        assertEquals(personservice.p.getAddress(), string);
     }
 
 

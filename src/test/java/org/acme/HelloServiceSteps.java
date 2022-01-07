@@ -26,6 +26,10 @@ public class HelloServiceSteps {
     public void i_call_the_person_service() {
         result = personservice.hello();
     }
+    @When("I call the person service2")
+    public void i_call_the_person_service2() {
+        result = personservice.hello2();
+    }
 
     @Then("I get the name {string}")
     public void i_get_the_name(String string) {
